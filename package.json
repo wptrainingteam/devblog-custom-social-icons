@@ -1,0 +1,11 @@
+{
+	"name": "devblog-editor-bindings",
+	"scripts": {
+		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
+		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.18.0",
+		"path": "^0.12.7"
+	}
+}
