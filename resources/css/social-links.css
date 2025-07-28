@@ -1,36 +1,48 @@
-
+/* IMDB */
 :where(.wp-block-social-links.is-style-logos-only) .wp-social-link-imdb {
 	color: #000000;
-}
-:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-kofi {
-	color: #72A5F2;
-}
-:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-letterboxd {
-	color: #202830;
-}
-:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-signal {
-	color: #3B45FD;
-}
-:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-youtube-music {
-	color: #FF0000;
 }
 
 :where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-imdb {
 	background-color: #F5C518;
 	color: #000000;
 }
+
+/* Ko-fi */
+:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-kofi {
+	color: #72A5F2;
+}
+
 :where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-kofi {
 	background-color: #72A5F2;
 	color: #ffffff;
 }
+
+/* Letterboxd */
+:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-letterboxd {
+	color: #202830;
+}
+
 :where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-letterboxd {
 	background-color: #3B45FD;
 	color:#fff;
 }
+
+/* Signal */
+:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-signal {
+	color: #3B45FD;
+}
+
 :where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-signal {
 	background-color: #3B45FD;
 	color:#fff;
 }
+
+/* YouTube Music */
+:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-youtube-music {
+	color: #FF0000;
+}
+
 :where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-youtube-music {
 	background-color: #FF0000;
 	color:#fff;

@@ -1,5 +1,5 @@
 {
-	"name": "devblog-editor-bindings",
+	"name": "devblog-custom-social-icons",
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
 		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
