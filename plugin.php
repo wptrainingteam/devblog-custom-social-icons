@@ -31,7 +31,7 @@ function devblog_custom_social_icons_editor_assets() {
 	}
 }
 
-//add_action( 'init', 'devblog_enqueue_block_assets' );
+add_action( 'init', 'devblog_enqueue_block_assets' );
 
 function devblog_enqueue_block_assets() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
