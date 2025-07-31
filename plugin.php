@@ -16,14 +16,14 @@ add_action( 'enqueue_block_editor_assets', 'devblog_custom_social_icons_editor_a
 
 function devblog_custom_social_icons_editor_assets() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
-	$url = untrailingslashit( plugin_dir_url(  __FILE__ ) );
+	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
-	if ( file_exists( "{$dir}/public/js/editor.asset.php" )) {
-		$asset = include "{$dir}/public/js/editor.asset.php";
+	if ( file_exists( "{$dir}/build/index.asset.php" )) {
+		$asset = include "{$dir}/build/index.asset.php";
 
 		wp_enqueue_script(
 			'devblog-custom-social-icons',
-			"{$url}/public/js/editor.js",
+			"{$url}/build/index.js",
 			$asset['dependencies'],
 			$asset['version'],
 			true
@@ -31,20 +31,19 @@ function devblog_custom_social_icons_editor_assets() {
 	}
 }
 
-add_action( 'init', 'devblog_enqueue_block_assets' );
+//add_action( 'init', 'devblog_enqueue_block_assets' );
 
 function devblog_enqueue_block_assets() {
 	$dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
-	$url = untrailingslashit( plugin_dir_url(  __FILE__ ) );
+	$url = untrailingslashit( plugin_dir_url( __FILE__ ) );
 
-	if ( file_exists( "{$dir}/public/css/social-links.asset.php" )) {
-		$asset = include "{$dir}/public/css/social-links.asset.php";
+	if ( file_exists( "{$dir}/build/index.asset.php" )) {
+		$asset = include "{$dir}/build/index.asset.php";
 
 		wp_enqueue_block_style('core/social-links', [
 			'handle' => 'devblog-block-social-links',
-			'src'    => "{$url}/public/css/social-links.css",
-			'path'   => "{$dir}/public/css/social-links.css",
-			'deps'   => $asset['dependencies'],
+			'src'    => "{$url}/build/style-index.css",
+			'path'   => "{$dir}/build/style-index.css",
 			'ver'    => $asset['version']
 		]);
 	}

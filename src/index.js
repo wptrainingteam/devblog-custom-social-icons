@@ -1,4 +1,7 @@
+// Import stylesheets.
+import './style.css';
 
+// Import dependencies.
 import { registerBlockVariation } from '@wordpress/blocks';
 import {SVG, Path} from '@wordpress/primitives';
 
